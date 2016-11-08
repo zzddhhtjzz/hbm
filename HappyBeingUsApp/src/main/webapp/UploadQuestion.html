@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Upload Activity here</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	$('#SelectTemplate').on('change', function() {
+  if ( this.value == 'SCQ')
+  {
+    $("#SCQ").css("display","block");
+  }
+  else
+  {
+    $("#MCQ").css("display","block");
+  }
+});
+});
+</script>
+</head>
+<body>
+	<label>Template type : </label>
+	<select id="SelectTemplate">
+		<option value="SCQ">SCQ</option>
+		<option value="MCQ">MCQ</option>
+	</select>
+	<div id="MCQ" style="display: none">
+		<p>Type the question below</p>
+		<input style="width: 300px" type="text" name="Question" />
+		<p>Type the Options below</p>
+		<input type="Checkbox" name="Answer1" /><input type="text"
+			name="Option1" /><br> <input type="Checkbox" name="Answer2" /><input
+			type="text" name="Option2" /><br> <input type="Checkbox"
+			name="Answer3" /><input type="text" name="Option3" /><br> <input
+			type="Checkbox" name="Answer4" /><input type="text" name="Option4" /><br>
+		<input type="Checkbox" name="Answer5" /><input type="text"
+			name="Option5" /><br> <br></br>
+		<button onclick="#DoSomething">Upload</button>
+	</div>
+	<div id="SCQ" style="display:none">
+		<p>Type the question below</p>
+		<input style="width: 300px" type="text" name="Question" />
+		<p>Type the Options below</p>
+		<input type="Checkbox" name="Answer1" /><input type="text"
+			name="Option1" /><br> <input type="Checkbox" name="Answer2" /><input
+			type="text" name="Option2" /><br> <input type="Checkbox"
+			name="Answer3" /><input type="text" name="Option3" /><br> <input
+			type="Checkbox" name="Answer4" /><input type="text" name="Option4" /><br>
+		<input type="Checkbox" name="Answer5" /><input type="text"
+			name="Option5" /><br> <br></br>
+		<button onclick="#DoSomething">Upload</button>
+	</div>
+	
+</body>
+</html>

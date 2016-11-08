@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+.left-inner-addon {
+	position: relative;
+}
+
+.left-inner-addon input {
+	padding-left: 30px;
+}
+
+.left-inner-addon i {
+	position: absolute;
+	padding: 10px 12px;
+	pointer-events: none;
+}
+
+.right-inner-addon {
+	position: relative;
+}
+
+.right-inner-addon input {
+	padding-right: 30px;
+}
+
+.right-inner-addon i {
+	position: absolute;
+	right: 0px;
+	padding: 10px 12px;
+	pointer-events: none;
+}
+</style>
+<title>Admin Login</title>
+</head>
+<body>
+	<div class="row" style="background-color: black; height: 20px;"></div>
+	<div class="row" style="background-color: #b3ecff; height: 20px;"></div>
+	<form action="Login.nisha" method="post">
+		<div class="modal-header">
+			<h4 style="margin-left:35%">Admin Login</h4>
+		</div>
+		<div class="modal-body" style="width: 500px; height: 200px;margin-left:30%">
+			<div class="form-group left-inner-addon">
+				<div class="col-lg-8">
+					<i class="glyphicon glyphicon-user"></i> <input type="text"
+						class="form-control" name="userName" placeholder="User name"
+						required>
+				</div>
+			</div>
+			<br></br>
+			<div class="form-group left-inner-addon">
+				<div class="col-lg-8">
+					<i class="glyphicon glyphicon-lock"></i> <input type="password"
+						class="form-control" name="password" placeholder="password"
+						required>
+				</div>
+			</div>
+			<br></br>
+
+			<div class="col-lg-6">
+				<a href="#ForgotPassword">Forgot Password</a>
+			</div>
+			<br></br>
+		</div>
+		<div class="modal-footer" style="margin-right:50%">
+			<a class="btn btn-default" data-dismiss="modal">Cancel</a>
+			<button class="btn btn-primary" type="submit">Login</button>
+
+		</div>
+	</form>
+	<footer>
+		<div class="row" style="background-color: #b3ecff; height: 20px;"></div>
+		<div class="row">
+			<div class="col-lg-12">
+				<p>Copyright &copy; HappyBeingUs.com 2016</p>
+				<img src="Images/Logo.png" align="right">
+			</div>
+		</div>
+		<!-- /.row -->
+	</footer>
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

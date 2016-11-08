@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Topics</title>
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../css/half-slider.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style type="text/css">
+.left-inner-addon {
+	position: relative;
+}
+
+.left-inner-addon input {
+	padding-left: 30px;
+}
+
+.left-inner-addon i {
+	position: absolute;
+	padding: 10px 12px;
+	pointer-events: none;
+}
+
+.right-inner-addon {
+	position: relative;
+}
+
+.right-inner-addon input {
+	padding-right: 30px;
+}
+
+.right-inner-addon i {
+	position: absolute;
+	right: 0px;
+	padding: 10px 12px;
+	pointer-events: none;
+}
+</style>
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Happy Being Us</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse"
+			id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Activities</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	</nav>
+	<!-- /.container -->
+	<br></br>
+	<div class="container">
+		<div class="jumbotron" style="">
+			<h1>My Topics</h1>
+		</div>
+		<div class="container" id="mytopics"></div>
+	</div>
+	<!-- Footer -->
+	<footer>
+	<div class="row" style="background-color: #ff6666; height: 20px;"></div>
+	<div class="row">
+		<div class="col-lg-12">
+			<p style="margin-left: 50px;">Copyright &copy; HappyBeingUs.com
+				2016</p>
+			<img src="../Images/Logo.png" align="right">
+		</div>
+	</div>
+	<!-- /.row --> </footer>
+	<!-- /.container -->
+
+	<!-- jQuery -->
+	<script src="../js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="../js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function myFunction() {
+			var map = {};
+			map["Media"] = 2;
+			map["Eating Disorders"] = 3;
+
+			var all_topics = document.createElement("div");
+			all_topics.className = "row";
+
+			var todo_section = document.createElement("div");
+			todo_section.className = "row";
+			var section_todo_header = document.createElement("h3");
+			var sec_todo_text_node = document.createTextNode("To do");
+			section_todo_header.appendChild(sec_todo_text_node);
+			todo_section .appendChild(section_todo_header);
+
+			var completed_section = document.createElement("div");
+			completed_section.className = "row";
+			var section_com_header = document.createElement("h3");
+			var sec_com_text_node = document.createTextNode("Completed");
+			section_com_header.appendChild(sec_com_text_node);
+			completed_section .appendChild(section_com_header);
+
+			for (var key in map) {
+
+			var topic = document.createElement("div");
+			completed_section.className = "row";
+
+			var topic_name_pro = document.createElement("div");
+			topic_name_pro.className = "row";
+
+			var topic_name = document.createElement("div");
+			topic_name.className = "col-sm-4";
+
+			var topic_pro = document.createElement("div");
+			topic_pro.className = "progress";
+
+			var topic_pro_bar = document.createElement("div");
+			topic_pro_bar.className = "progress-bar progress-bar-success progress-bar-striped";
+			topic_pro_bar.style.width = "100px";
+			topic_pro.appendChild(topic_pro_bar);
+			topic_pro.style.width = "300px";
+			topic_pro.style.marginTop = "18px";
+
+
+			var topic_name_header = document.createElement("h3");
+			var name_text_node = document.createTextNode(key);
+			topic_name_header.appendChild(name_text_node);
+			topic_name.appendChild(topic_name_header);
+			topic_name_pro.appendChild(topic_name);
+			topic_name_pro.appendChild(topic_pro);
+
+			var activities = document.createElement("div");
+			activities.className = "row";
+			var topic_status =  map[key];
+			for (j = 0; j < topic_status; j++) {
+			var col_new = document.createElement("div");
+			var header_new = document.createElement("h3");
+			var node_ht = document.createTextNode("Col "+j);
+			var node = document.createTextNode("This is new.");
+			header_new.appendChild(node_ht);
+			col_new.appendChild(header_new);
+			col_new.appendChild(node);
+			col_new.className = "col-sm-4";
+			activities.appendChild(col_new);
+			}
+
+			topic.appendChild(topic_name_pro);
+			topic.appendChild(activities);
+
+
+			todo_section.appendChild(topic);
+
+			}
+
+			var element = document.getElementById("mytopics");
+			element.appendChild(todo_section);
+			element.appendChild(completed_section);
+			});
+			</script>
+</body>
+
+
+</html>

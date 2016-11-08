@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+/* Remove the navbar's default margin-bottom and rounded borders */	
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+	background-color: #f2f2f2;
+	padding: 25px;
+}
+</style> 
+
+
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">HappyBeingUs</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+							Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>Diagnostic Test</h1>
+			<p>Please answer to the following questions and click on SUBMIT !</p>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<h2>Question 1</h2>
+		<p>If 5x+32=4-2x , What is the value of x?</p>
+		<form role="form">
+			<div class="checkbox">
+				<label><input type="checkbox" value="">-4</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">-3</label>
+			</div>
+			<div class="checkbox ">
+				<label><input type="checkbox" value="" >4</label>
+			</div>
+		</form>
+	</div>
+
+
+
+
+	<div class="container">
+		<h2>Question 2</h2>
+		<p>Which of the following numbers is farthest from the number 1 on the number line?</p>
+		<form role="form">
+			<div class="radio">
+				<label><input type="radio" name="optradio">-10</label>
+			</div>
+			<div class="radio">
+				<label><input type="radio" name="optradio">-5</label>
+			</div>
+			<div class="radio ">
+				<label><input type="radio" name="optradio" >10
+				</label>
+			</div>
+		</form>
+	</div>
+
+
+	<div class="container">
+		<h2>Question 3</h2>
+		<p>A car got 33 miles per gallon using gasoline that cost $2.95 per gallon. Approximately what was the cost, in dollars, of the gasoline used in driving the car 350 miles?</p>
+		<form role="form">
+			<div class="radio">
+				<label><input type="radio" name="optradio">10$</label>
+			</div>
+			<div class="radio">
+				<label><input type="radio" name="optradio">20$</label>
+			</div>
+			<div class="radio ">
+				<label><input type="radio" name="optradio" >30$
+				</label>
+			</div>
+		</form>
+	</div>
+
+	<div class="container">
+		<h2>Question 4</h2>
+		<p>A certain jar contains 60 jelly beans — 22 white, 18 green, 11 yellow, 5 red and 4 purple. If a jelly bean is to be chosen at random, what is the probability that the jelly bean will be neither red nor purple?</p>
+		<form role="form">
+			<div class="radio">
+				<label><input type="radio" name="optradio">0.09</label>
+			</div>
+			<div class="radio">
+				<label><input type="radio" name="optradio">0.15</label>
+			</div>
+			<div class="radio ">
+				<label><input type="radio" name="optradio" >0.54
+				</label>
+			</div>
+		</form>
+	</div>
+
+	<div class="container">
+		<h2>Question 5</h2>
+		<p>The Supreme Court case of Brown v. Board of Education declared that separate public schools for black and white children are:</p>
+		<form role="form">
+			<div class="checkbox">
+				<label><input type="checkbox" value="">a. permissible as long as the schools are “equal” in funding, facilities, and other measurable qualities</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">permissible unless students or parents at those schools objected</label>
+			</div>
+			<div class="checkbox ">
+				<label><input type="checkbox" value="" >impermissible</label>
+			</div>
+			<div class="checkbox ">
+				<label><input type="checkbox" value="" >impermissible in elementary/high schools but were permissible in college</label>
+			</div>
+			<div class="checkbox ">
+				<label><input type="checkbox" value="" >impermissible in Southern states but not in Northern states</label>
+			</div>
+		</form>
+	</div>
+	<div class="container-fluid bg-3 text-right">
+		<a href="#" class="btn btn-primary" role="button">submit</a>
+	</div>
+
+	<footer class="container-fluid text-center">
+			<p>Designed By Group 11 3/21/2016</p>
+	</footer>
+
+</body>
+</html>

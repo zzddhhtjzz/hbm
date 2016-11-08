@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>User Multiple Choice</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+/* Remove the navbar's default margin-bottom and rounded borders */	
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+	background-color: #f2f2f2;
+	padding: 25px;
+}
+</style> 
+
+
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Home</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+							Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="jumbotron">
+		<div class="container text-left">
+			<p class="text-primary" >Activity Container 1</p>
+		</div>
+		<div class="container text-center">
+			<h2> Activity 1 </h2>
+			<p> choose the right answer:</p>
+		</div>
+	</div>
+
+  <form action=# role="form" method="get">
+		<div class="container">
+			<h2 class="text-info">Question 1</h2>
+			<p>Which of the following numbers is farthest from the number 1 on the number line?</p>
+			
+				<div class="radio">
+					<label><input type="radio" name="optradio1" required>-10</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optradio1">-5</label>
+				</div>
+				<div class="radio ">
+					<label><input type="radio" name="optradio1" >10
+					</label>
+				</div>
+			
+		</div>
+
+
+		<div class="container">
+			<h2 class="text-info">Question 2</h2>
+			<p>A car got 33 miles per gallon using gasoline that cost $2.95 per gallon. Approximately what was the cost, in dollars, of the gasoline used in driving the car 350 miles?</p>
+			
+				<div class="radio">
+					<label><input type="radio" name="optradio2" required>10$</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optradio2" >20$</label>
+				</div>
+				<div class="radio ">
+					<label><input type="radio" name="optradio2" >30$
+					</label>
+				</div>
+			
+		</div>
+
+		<div class="container">
+			<h2 class="text-info">Question 3</h2>
+
+			<p>A certain jar contains 60 jelly beans — 22 white, 18 green, 11 yellow, 5 red and 4 purple. If a jelly bean is to be chosen at random, what is the probability that the jelly bean will be neither red nor purple?</p>
+			
+				<div class="radio ">
+					<label><input type="radio" name="optradio3" required>0.09</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optradio3">0.15</label>
+				</div>
+				<div class="radio ">
+					<label><input type="radio" name="optradio3" >0.54</label>
+				</div>
+		</div>
+
+
+		<div class="container fluid text-center">
+			<input type="submit" class="btn btn-primary btn_lg" role="button" value="check answers" > 
+		</input>
+		</div>
+
+   </form>
+
+ <tr><td><br/></td></tr>
+ <ul class="pager">
+  <li><a href="#">Previous</a></li>
+  <li><a href="#">Next</a></li>
+</ul>
+<tr><td><br/></td></tr>
+
+   <footer class="container-fluid text-right">
+			<p>Designed By Group 11 3/21/2016</p>
+   </footer>
+
+</body>
+</html>

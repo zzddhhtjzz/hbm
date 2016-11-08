@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Admin NEW Activity </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+         href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+        src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+      
+
+        .jumbotron {
+            background-color: orange;
+        }
+        .inv {
+            display: none;
+        }
+        .dropdown-menu {
+            width: 300px !important;
+            height: 400px !important;
+        }
+        .dropdown-menu {
+            min-width:auto;
+            width:100%;
+            }
+
+        .btn-file2 {
+            position: relative;
+            overflow: hidden;
+                  }
+        .btn-file2 input[type=file] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 100%;
+            min-height: 100%;
+            font-size: 100px;
+            text-align: right;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            outline: none;
+            background: white;
+            cursor: inherit;
+            display: block;
+            }
+</style> 
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#myNavbar">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+                        class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Admin Home</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+                            Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h2>Create Activity</h2>
+            <p> Create   Activities here: <p>
+        </div>
+    </div>
+
+
+    <select id="target">
+        <option value="">Select The Activity...</option>
+        <option value="content_1">Information </option>
+        <option value="content_2">Multiple Choice</option>
+        <option value="content_3">Image </option>
+        <option value="content_4">Video </option>
+        <option value="content_5">Flip </option>
+    <select>
+
+
+    <div id="content_1" class="inv"><div class="container">
+        <h2></h2>
+        <form role="form" action=# method="post">           
+            
+            <div class="form-group">
+                <label for="comment">Information Content:</label>
+                <textarea  class="form-control" rows="5" id="comment" placeholder="Enter Information Content Here."></textarea>
+            </div>
+
+            <input type="submit" class="btn btn-primary btn_lg" value="submit"></input>
+        </form>
+    </div>
+        <tr><td><br/></td></tr>
+        <div class="jumbotron">
+           <footer class="container-fluid text-right">
+
+           </footer>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="content_2" class="inv">
+
+        <div class="container">
+        <h2></h2>
+        <form role="form" action=# method="post">
+            
+            <div class="form-group">
+                <label for="comment">Question Content:</label>
+                <textarea  class="form-control" rows="5" id="comment" placeholder="Enter Question Contents Here."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="option1">1st Choice</label>
+                <input type="text" class="form-control" id="option1" name="option1" placeholder="Content for first choice">
+            </div>
+            <div class="form-group">
+                <label for="option2">2nd Choice</label>
+                <input type="text" class="form-control" id="option2" name="option2" placeholder="Content for second choice">
+            </div>
+            <div class="form-group">
+                <label for="option3">3rd Choice</label>
+                <input type="text" class="form-control" id="option3" name="option3" placeholder="Content for third choice">
+            </div>
+
+            <input type="submit" class="btn btn-primary btn_lg" value="submit"></input>
+        </form>
+        
+    </div>
+        <tr><td><br/></td></tr>
+        <div class="jumbotron">
+           <footer class="container-fluid text-right">
+
+           </footer>
+        </div>
+
+    </div>
+
+
+    <div id="content_3" class="inv">
+
+        <div class="container">
+        <h2></h2>
+        <form role="form" action=# method="post">
+            
+
+            <div class="form-group">
+                <label for="option1">Image Link</label>
+                <input type="text" class="form-control" id="option1" name="option1" placeholder="Video link ">
+                <p> or Browse from computer</p>
+                <span class="btn btn-default btn-file2">
+                    Browse <input type="file">
+                </span>
+            </div>          
+
+
+            <div class="form-group">
+                <label for="comment">Question Content:</label>
+                <textarea  class="form-control" rows="5" id="comment" placeholder="Enter Question Contents Here."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="comment">Answer Content:</label>
+                <textarea  class="form-control" rows="5" id="comment" placeholder="Enter Answer Here."></textarea>
+            </div>
+
+            <input type="submit" class="btn btn-primary btn_lg" value="submit"></input>
+        </form>
+        
+    </div>
+        <tr><td><br/></td></tr>
+        <div class="jumbotron">
+           <footer class="container-fluid text-right">
+
+           </footer>
+        </div>
+    </div>
+    
+
+    <div id="content_4" class="inv">
+
+        <div class="container">
+        <h2></h2>
+        <form role="form" action=# method="post">
+            
+            <div class="form-group">
+                <label for="option1">Video Link</label>
+                <input type="text" class="form-control" id="option1" name="option1" placeholder="Video link ">
+            </div>          
+
+
+            <div class="form-group">
+                <label for="comment">Question Content:</label>
+                <textarea  class="form-control" rows="5" id="comment" placeholder="Enter Question Contents Here."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="comment">Answer Content:</label>
+                <textarea  class="form-control" rows="5" id="comment" placeholder="Enter Answer Here."></textarea>
+            </div>
+
+            <input type="submit" class="btn btn-primary btn_lg" value="submit"></input>
+        </form>
+        
+    </div>
+        <tr><td><br/></td></tr>
+        <div class="jumbotron">
+           <footer class="container-fluid text-right">
+
+           </footer>
+        </div>
+    </div>
+    
+
+    <div id="content_5" class="inv">
+    
+
+        <div class="container">
+                    <h2></h2>
+                    <form role="form" action=# method="post">
+                                
+
+
+                        <div class="form-group">
+                            <h1> Card 1 </h1>
+                            <label for="comment">Front Content:</label>
+                            <textarea  class="form-control" rows="5" id="comment" placeholder="Enter Front Contents Here."></textarea>
+                            <label for="comment">Back Content:</label>
+                            <textarea  class="form-control" rows="5" id="comment" placeholder="Enter Back Contents Here."></textarea>
+                        </div>
+                        <tr><td><br/></td></tr>
+                        <div class="form-group">
+                            <h1> Card 2 </h1>
+                            <label for="comment">Front Content:</label>
+                            <textarea  class="form-control" rows="5" id="comment" placeholder="Enter Front Contents Here."></textarea>
+                            <label for="comment">Back Content:</label>
+                            <textarea  class="form-control" rows="5" id="comment" placeholder="Enter Back Contents Here."></textarea>
+                        </div>
+                        <tr><td><br/></td></tr>
+                        <div class="form-group">
+                            <h1> Card 3 </h1>
+                            <label for="comment">Front Content:</label>
+                            <textarea  class="form-control" rows="5" id="comment" placeholder="Enter Front Contents Here."></textarea>
+                            <label for="comment">Back Content:</label>
+                            <textarea  class="form-control" rows="5" id="comment" placeholder="Enter Back Contents Here."></textarea>
+                        </div>
+                        <tr><td><br/></td></tr>
+
+                        <div class="container text-right">
+                                <input type="submit" class="btn btn-primary btn_lg" value="submit"></input>
+
+                        </div> 
+                    </form>
+        </div>
+        <tr><td><br/></td></tr>
+        <div class="jumbotron">
+                        <footer class="container-fluid text-right">
+                        </footer>
+         </div>
+    </div>
+    <tr><td><br/></td></tr>
+    
+
+    <script>
+        document
+            .getElementById('target')
+            .addEventListener('change', function () {
+                'use strict';
+                var vis = document.querySelector('.vis'),   
+                    target = document.getElementById(this.value);
+                if (vis !== null) {
+                    vis.className = 'inv';
+                }
+                if (target !== null ) {
+                    target.className = 'vis';
+                }
+        });
+    </script>
+</body>
+</html>
